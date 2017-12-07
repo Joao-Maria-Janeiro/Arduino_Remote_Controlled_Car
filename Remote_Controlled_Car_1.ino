@@ -50,7 +50,7 @@ void loop() {
     }
     else if (val == 600) // Forward_R
     {
-      digitalWrite(pin3, HIGH):
+      digitalWrite(pin3, HIGH);
       digitalWrite(pin4, LOW);
     }
     else if (val >= 1000 && val <=1255) // Slider_L
@@ -64,4 +64,4 @@ void loop() {
     }
   }
 
-}
+
