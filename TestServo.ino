@@ -57,8 +57,12 @@ void loop() {
   }
 
    else if ( realservo >= 2000 && realservo <= 2255) {
-      analogWrite (pw1, realservo - 2000);
-      analogWrite (pw2, realservo - 2000);
+      digitalWrite(pin3, HIGH);
+      digitalWrite(pin4, LOW);
+        analogWrite (pw1, realservo - 2000);
+      digitalWrite(pin1, HIGH);
+      digitalWrite(pin2, LOW);
+        analogWrite (pw2, realservo - 2000);
     
    }
   
